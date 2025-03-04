@@ -315,30 +315,4 @@ footer {
     opacity: 0.8;
 }
 
-.blog-section {
-    text-align: center;
-    padding: 50px 10px;
-    background-color: #f8f9fa; /* Color de fondo general */
-}
-
-.juicer-feed {
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.juicer-feed h1.referral {
-    display: none; /* Oculta el branding de Juicer */
-}
-
-/* Estilo para cada post */
-.juicer-feed .j-poster {
-    background-color: #e0e0e0; /* Fondo gris */
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 
