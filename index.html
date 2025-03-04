@@ -9,6 +9,8 @@
     <!-- Agregamos tsparticles -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
 
+    <!-- Swiper.js para el carrusel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
 
@@ -43,9 +45,9 @@
                 <img src="./python2.png" alt="Python">
                 <img src="./powerbi 1.png" alt="Power BI">
                 <img src="./SQL.png" alt="SQL">
-                <img src="./mongo.png">
-                <img src="./AWS.png">
-                <img src="./HADOOP.png">
+                <img src="./mongo.png" alt="MongoDB">
+                <img src="./AWS.png" alt="AWS">
+                <img src="./HADOOP.png" alt="Hadoop">
             </div>
         </div>
         <div class="profile-pic">
@@ -54,11 +56,53 @@
         </div>
     </section>
 
+    <!-- Sección Blog con Carrusel -->
+    <section id="blog" class="blog-section">
+        <h2>Mi Blog</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Post 1 -->
+                <div class="swiper-slide">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7300329638004748288" height="1028" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
+                </div>
+                <!-- Post 2 -->
+                <div class="swiper-slide">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7298435287259439105" height="984" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
+                </div>
+                <!-- Post 3 -->
+                <div class="swiper-slide">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7296793908427051008" height="1616" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
     <!-- Script para cargar las partículas -->
     <script src="particles.js"></script>
 
+    <!-- Script Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
     <footer>
         <p>© 2025 Jeffersson. Todos los derechos reservados.</p>
-        
+    </footer>
+
 </body>
 </html>
